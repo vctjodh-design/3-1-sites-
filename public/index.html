@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Football fixtures</title>
+  <link rel="stylesheet" href="/styles.css?v=13" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="app-brand">
+        <span class="app-mark">BE</span>
+        <span class="app-title">Fixtures<span class="app-title-accent">×</span>Stats</span>
+      </div>
+      <div class="app-date">
+        <button type="button" class="date-nav" data-date-offset="-1" aria-label="Previous day">&lsaquo;</button>
+        <input type="date" id="date-input" aria-label="Match date" />
+        <button type="button" class="date-nav" data-date-offset="1" aria-label="Next day">&rsaquo;</button>
+      </div>
+    </header>
+
+    <div class="app-meta" id="app-meta" aria-live="polite"></div>
+
+    <main class="app-main">
+      <section id="fixtures" class="fixtures" aria-label="Fixtures"></section>
+    </main>
+
+    <section id="detail" class="detail" hidden aria-label="Match detail">
+      <div class="detail-bar">
+        <button type="button" class="back-btn" data-action="close-detail">&larr; Back</button>
+        <span class="detail-bar-title">Match</span>
+      </div>
+      <div id="detail-body" class="detail-body"></div>
+    </section>
+  </div>
+
+  <script src="/app.js?v=13" defer></script>
+</body>
+</html>
