@@ -1,0 +1,16 @@
+{
+  "name": "football-fixtures",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Football fixtures, results and 1X2 odds scraped from BetExplorer",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "setup:statshub": "python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "express": "^4.22.3"
+  }
+}
